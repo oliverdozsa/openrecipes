@@ -18,6 +18,8 @@ libraryDependencies ++= Seq(evolutions, jdbc)
 
 libraryDependencies ++= Seq(javaJpa % "test", "org.hibernate" % "hibernate-core" % "5.4.2.Final" % "test")
 libraryDependencies += "com.github.database-rider" % "rider-core" % "1.7.2" % "test"
+libraryDependencies += "org.hamcrest" % "hamcrest-library" % "1.3" % "test"
+libraryDependencies += "com.jayway.jsonpath" % "json-path" % "2.4.0" % "test"
 
 javaOptions in Test ++= Seq("-Dconfig.file=conf/application.test.conf")
 
